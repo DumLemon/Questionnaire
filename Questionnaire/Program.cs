@@ -50,12 +50,19 @@
 
             #region MonthInput
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Enter the number of the month of your birth (ex:February = 02): ");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             month_input = Console.ReadLine();
 
+            
             while (!int.TryParse(month_input, out month))
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("Please enter a valid number:");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 month_input = Console.ReadLine();
             }
 
