@@ -18,7 +18,10 @@
 
             while (name_input == "")
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("Enter your name: ");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 name_input = Console.ReadLine();
 
             }
@@ -27,12 +30,19 @@
 
             #region DayInputs
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Enter the day of your birthday: ");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             day_input = Console.ReadLine();
 
+            
             while (!int.TryParse(day_input, out day))
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("Please enter a valid number:");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 day_input = Console.ReadLine();
             }
 
