@@ -92,12 +92,19 @@
 
             #region CountryInput
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Enter your country:");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             country_input = Console.ReadLine();
+
 
             while (country_input == "")
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Enter a valid country:");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 country_input = Console.ReadLine();
             }
 
