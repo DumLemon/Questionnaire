@@ -18,8 +18,8 @@
 
             while (name_input == "")
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("Enter your name: ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("Please enter your name: ");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 name_input = Console.ReadLine();
@@ -39,7 +39,7 @@
             
             while (!int.TryParse(day_input, out day))
             {
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("Please enter a valid number:");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -59,7 +59,7 @@
             
             while (!int.TryParse(month_input, out month))
             {
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("Please enter a valid number:");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -79,7 +79,7 @@
 
             while (!int.TryParse(year_input, out year))
             {
-                Console.ForegroundColor = ConsoleColor.Green; 
+                Console.ForegroundColor = ConsoleColor.Red; 
                 Console.Write("Enter a valid birth year: ");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -101,8 +101,8 @@
 
             while (country_input == "")
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Enter a valid country: ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("Enter a valid country: ");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 country_input = Console.ReadLine();
@@ -121,7 +121,7 @@
             
             while (city_input == "")
             {
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("Please enter a valid city:");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
