@@ -4,15 +4,16 @@
     {
         public static void Main()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-
 
             string name_input, city_of_birth, day_input, month_input, year_input, city_input, country_input;
             int day, month, year;
 
             #region NameInputs
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Enter your name: ");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             name_input = Console.ReadLine();
 
             while (name_input == "")
