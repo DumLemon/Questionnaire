@@ -1,6 +1,6 @@
-﻿namespace Questionnaire 
+﻿namespace Questionnaire
 {
-    public class System 
+    public class System
     {
         public static void Main()
         {
@@ -94,22 +94,21 @@
             #endregion
 
             #region ShowingTheInputs
-            
+
             Console.WriteLine("\n\nPlease confirm your details:\n");
             Console.Write("Name: " + name_input + "\n" +
-                          "Birthday: " + day+"." + month_input+"." + year_input+"\n" +                        
-                          "City: " + city_input+", " + country_input + "\n\n\n");
+                          "Birthday: " + day + "." + month_input + "." + year_input + "\n" +
+                          "City: " + city_input + ", " + country_input + "\n\n\n");
 
             #endregion
 
         }
     }
-
-
-    //Date of birth(age)
-    //City of birth
     
     
+    //criar uma lista de numeros para dias de 1 - 30
+    //Criar uma lista de meses de 1 - 12
+    //Criar  uma lista de anos 1900 - 2026
 
 
 
