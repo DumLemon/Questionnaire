@@ -7,18 +7,18 @@
             Console.ForegroundColor = ConsoleColor.Green;
 
             
-            string name, city_of_birth, day_input, month_input, year_input;
+            string name_input, city_of_birth, day_input, month_input, year_input, city_input;
             int day, month, year;
 
             #region NameInputs
 
             Console.Write("Enter your name: ");
-            name = Console.ReadLine();
+            name_input = Console.ReadLine();
 
-            while (name == "") 
+            while (name_input == "") 
             {
                 Console.Write("Enter your name: ");
-                name = Console.ReadLine();
+                name_input = Console.ReadLine();
 
             }
 
@@ -66,7 +66,20 @@
 
             #endregion
 
+            #region CityInput
 
+            Console.Write("Enter the city where you were born:");
+            city_input = Console.ReadLine();
+
+            while (city_input == "") 
+            {
+                Console.Write("Enter a valid city:");
+                city_input = Console.ReadLine();
+            }
+
+
+
+            #endregion
 
         }
     }
