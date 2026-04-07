@@ -112,12 +112,19 @@
 
             #region CityInput
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Enter your city:");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             city_input = Console.ReadLine();
 
+            
             while (city_input == "")
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("Please enter a valid city:");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 city_input = Console.ReadLine();
             }
 
