@@ -71,12 +71,18 @@
 
             #region YearInput
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Enter your birth year:");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             year_input = Console.ReadLine();
 
             while (!int.TryParse(year_input, out year))
             {
+                Console.ForegroundColor = ConsoleColor.Green; 
                 Console.Write("Enter a valid birth year:");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 year_input = Console.ReadLine();
             }
 
