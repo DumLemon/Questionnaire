@@ -51,7 +51,7 @@
             #region MonthInput
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("Enter the number of the month of your birth (ex:February = 02): ");
+            Console.Write("Enter the number of the month of your birth: ");
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             month_input = Console.ReadLine();
@@ -72,7 +72,7 @@
             #region YearInput
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("Enter your birth year:");
+            Console.Write("Enter your birth year: ");
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             year_input = Console.ReadLine();
@@ -80,7 +80,7 @@
             while (!int.TryParse(year_input, out year))
             {
                 Console.ForegroundColor = ConsoleColor.Green; 
-                Console.Write("Enter a valid birth year:");
+                Console.Write("Enter a valid birth year: ");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 year_input = Console.ReadLine();
@@ -93,7 +93,7 @@
             #region CountryInput
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("Enter your country:");
+            Console.Write("Enter your country: ");
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             country_input = Console.ReadLine();
@@ -102,7 +102,7 @@
             while (country_input == "")
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Enter a valid country:");
+                Console.WriteLine("Enter a valid country: ");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 country_input = Console.ReadLine();
@@ -133,11 +133,14 @@
 
             #region ShowingTheInputs
 
-            Console.WriteLine("\n\nPlease confirm your details:\n");
-            Console.Write("Name: " + name_input + "\n" +
-                          "Birthday: " + day + "." + month_input + "." + year_input + "\n" +
-                          "City: " + city_input + ", " + country_input + "\n\n\n");
+            Console.WriteLine("\n\n\x1b[38;5;227m Please confirm your details:\n");
 
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write($"\u001b[38;5;87m Name: \x1b[38;5;229m{name_input}\n" +
+                          $"\x1b[38;5;87m Birthday: \x1b[38;5;229m{day_input}.{month_input}.{year_input}\n" +
+                          $"\u001b[38;5;87m City: \x1b[38;5;229m{city_input}, {country_input}\n\n\n");
+            
+            Console.ForegroundColor = ConsoleColor.Green;
             #endregion
 
         }
