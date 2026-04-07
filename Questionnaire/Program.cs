@@ -7,8 +7,8 @@
             Console.ForegroundColor = ConsoleColor.Green;
 
             
-            string name, city_of_birth, day_input, month_input, year;
-            int day, month;
+            string name, city_of_birth, day_input, month_input, year_input;
+            int day, month, year;
 
             #region NameInputs
 
@@ -23,7 +23,6 @@
             }
 
             #endregion 
-
 
             #region DayInputs
 
@@ -48,9 +47,26 @@
                 Console.Write("Please enter a valid number:");
                 month_input = Console.ReadLine();
             }
-            
+
 
             #endregion
+
+            #region YearInput
+            
+            Console.Write("Enter your birth year:");
+            year_input = Console.ReadLine();
+
+            while (!int.TryParse(year_input, out year)) 
+            {
+                Console.Write("Enter a valid birth year:");
+                year_input = Console.ReadLine();
+            }
+
+
+
+            #endregion
+
+
 
         }
     }
